@@ -1,4 +1,3 @@
-//css goes here
 
 //NAVIGATION 
 
@@ -87,4 +86,12 @@ body {
   white-space:no-wrap;
   overflow:hidden;
   text-align:center;
+}
+
+
+
+//extra css
+
+.headertext{
+	margin-bottom: 30px;
 }
