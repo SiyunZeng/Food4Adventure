@@ -12,9 +12,6 @@ function myFunction() {
 }
 
 
-
-
-
 // User selects hike or adventure from a set of radial? buttons - calories are displayed
 function comox() {
     alert("You need 4000 calories for this hike!");
