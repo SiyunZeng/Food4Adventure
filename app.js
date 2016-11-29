@@ -8,7 +8,7 @@
     messagingSenderId: "1047852701386"
   };
   firebase.initializeApp(config);  
-}
+
 
 //Get Elements
 const preObject = document.getElementById('object');
