@@ -1,115 +1,127 @@
 <html lang="en">
 <head>
-<meta charset="utf-8">
-  <link rel="stylesheet" href="main.css">
-  <script src="hike.js"></script> 
-  <!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js:6:37"></script>
-  
-  <title>Food4Adventure</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js:6:37"></script>
+     <link src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></link>
+     <script src="hike.js"></script> 
+    <title>Food4Adventure</title>
   </head>
+
 <body>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root">
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+    </div>
   
 <div class="container-fluid">
-<!-- Navigation Bar -->
-    <ul class="topnav" id="myTopnav">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <div class="fb-like" data-href="https://siyunzeng.github.io/Food4Adventure/#home" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true" text-align="right"></div>
-      <li class="icon">
-        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-      </li>
-    </ul>
-  
-  
- <!-- Header Image  Source: http://www.bootply.com/108614#  --> 
-  <div class="wide">
-    <div class="col-xs-5 line"><hr></div>
-    <div class="col-xs-2 logo">Food 4 Adventure</div>
-    <div class="col-xs-5 line"><hr></div>
-    <div class="col-xs-12 logo"><h2>Take the guessing out of your trip</h2></div>
-    <div class="col-xs-12 logo"><h2>Pack Smart</h2></div>
-    
-</div>
-  
+    <!-- Navigation Bar -->
+        <ul class="topnav" id="myTopnav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <div class="fb-like" data-href="https://siyunzeng.github.io/Food4Adventure/#home" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true" text-align="right"></div>
+          <li class="icon">
+            <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+          </li>
+        </ul>
+      
+
+       <!-- Header Image  Source: http://www.bootply.com/108614#  --> 
+      <div class="wide">
+        <div class="col-xs-5 line"><hr></div>
+        <div class="col-xs-2 logo">Food 4 Adventure</div>
+        <div class="col-xs-5 line"><hr></div>
+        <div class="col-xs-12 logo"><h2>Take the guessing out of your trip</h2></div>
+        <div class="col-xs-12 logo"><h2>Pack Smart</h2></div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-4">
+              <h2>Select a Hike</h2>
+              <div class="btn-group-vertical" role="group" aria-label="...">
+                 <button onclick="comox()" class="btn btn-success btn-lg">Comox Glacier</button>
+                 <button onclick="albert()" class="btn btn-success btn-lg">Mount Albert Edward</button>
+                 <button onclick="kludahk()" class="btn btn-success btn-lg">Kludahk Trail</button>
+                 <button onclick="westcoast()" class="btn btn-success btn-lg">West Coast Trail</button>
+                  <button onclick="juandefuca()" class="btn btn-success btn-lg">Juan de Fuca</button>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <h2>Select Your Foods</h2>
+              <div class ="meal">
+                <h4 class="text-secondary">Breakfast</h4>
+                <form action="">
+                 <input type="radio" name="breakfast" value="breakfast">Porridge<br>
+                </form>
+              </div>
+            <div class ="meal">
+                    <h4>Snacks</h4>
+                    <form action="">
+                      <input type="radio" name="snack" value="snack">Dried Apples<br>
+                      <input type="radio" name="snack" value="snack">Banana Chips<br>
+                      <input type="radio" name="snack" value="snack">Clif Bar<br>
+                    </form>
+            </div>
+            <div class ="meal">
+                  <h4>Lunch</h4>
+                  <form action="">
+                    <input type="radio" name="snack" value="snack">Dried Apples<br>
+                    <input type="radio" name="lunch" value="lunch">Ramen<br>
+                  </form>
+              </div>
+            <div class = 'meal'>
+                  <h4>Snacks</h4>
+                  <form action="">
+                    <input type="radio" name="snack" value="snack">Dried Apples<br>
+                    <input type="radio" name="snack" value="snack">Banana Chips<br>
+                    <input type="radio" name="snack" value="snack">Clif Bar<br>
+                  </form>
+            </div>
+            <div class = 'meal'>
+                  <h4>Dinner</h4>
+                  <form action="">
+                    <input type="radio" name="dinner" value="dinner">Beef Stoganoff<br>
+                    <input type="radio" name="dinner" value="dinner">Lasagna<br>
+                  </form>
+            </div>
+            <br>   
+        </div>
+
+      <div class="col-lg-4">
+              <h3 class="text-secondary">Weight Calculator</h3>
+              <p> weight calculator something goes here</p>
+              <br>
+               <h3 class="text-secondary">Calorie Counter</h3>
+               <p>some text or something here </p>
+              </div>
+          </div>    
+
+
+
+     </div>
+
+
+
+
   <div class="row">
-    <p>&nbsp;</p>
-    <div class="col-lg-12">
-        <h2 class="text-secondary line">Food Planner</h2>
-        
+          <div class="col-lg-12 center-block">
+              <h2 class="text-secondary">Social Media?</h2>
+              <p>Feedback from customers </p>
+          </div>
     </div>
-  </div>
-  
-    <div class="col-lg-4">
-      <h3 class="text-secondary">Day 1</h3>
-<div class = 'meal'>
-        <h4 class="text-secondary">Breakfast</h4>
-        <form action="">
-          <input type="radio" name="breakfast" value="breakfast">Porridge<br>
-        </form>
-</div>
-<div class ="meal">
-        <h4>Snacks</h4>
-        <form action="">
-          <input type="radio" name="snack" value="snack">Dried Apples<br>
-          <input type="radio" name="snack" value="snack">Banana Chips<br>
-          <input type="radio" name="snack" value="snack">Clif Bar<br>
-        </form>
-</div>
-<div class ="meal">
-        <h4>Lunch</h4>
-        <form action="">
-          <input type="radio" name="snack" value="snack">Dried Apples<br>
-          <input type="radio" name="lunch" value="lunch">Ramen<br>
-        </form>
-</div>
-<div class = 'meal'>
-        <h4>Snacks</h4>
-        <form action="">
-          <input type="radio" name="snack" value="snack">Dried Apples<br>
-          <input type="radio" name="snack" value="snack">Banana Chips<br>
-          <input type="radio" name="snack" value="snack">Clif Bar<br>
-        </form>
-        </div>
-<div class = 'meal'>
-        <h4>Dinner</h4>
-        <form action="">
-          <input type="radio" name="dinner" value="dinner">Beef Stoganoff<br>
-          <input type="radio" name="dinner" value="dinner">Lasagna<br>
-        </form>
-        </div>
-        <br>   
-    </div>
-     
-       
-     
-    
-    <div class="col-lg-4">
-        <h3 class="text-secondary">Weight Calculator</h3>
-    </div>
-    
-    <div class="col-lg-4">
-        <h3 class="text-secondary">Calorie Counter</h3>
-        
-    </div>
-    
-  </div>
-   
-  
-  
+
+
+
   <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
 <script>
   // Initialize Firebase
