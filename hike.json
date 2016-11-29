@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "1",
+    "food": "Banana Chips",
+    "calories": "218",
+    "weight": "42",
+    "price": "$4.00"
+  },
+  {
+    "_id": "2",
+    "food": "Dried Apple",
+    "calories": "209",
+    "weight": "120",
+    "price": "$2.00"
+  },
+  {
+    "_id": "3",
+    "food": "Porridge",
+    "calories": "160",
+    "weight": "45",
+    "price": "$1.50"
+  },
+  {
+    "_id": "4",
+    "food": "cliff bar",
+    "calories": "200",
+    "weight": "40",
+    "price": "$2.50"
+  },
+  {
+    "_id": "5",
+    "food": "ramen",
+    "calories": "500",
+    "weight": "100",
+    "price": "$2.50"
+  }
+]
