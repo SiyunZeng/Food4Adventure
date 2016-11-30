@@ -1,0 +1,51 @@
+{
+  "users": {
+    "1": {
+    "food": "Banana Chips",
+    "category": "Snack",
+    "calories": "218",
+    "weight": "42",
+    "price": "$4.00"
+  },
+  
+    "2": {
+    "food": "Dried Apple",
+    "category": "Snack",
+    "calories": "209",
+    "weight": "120",
+    "price": "$2.00"
+  },
+  
+    "3": {
+    "food": "Porridge",
+    "category": "Breakfast",
+    "calories": "160",
+    "weight": "45",
+    "price": "$1.50"
+  },
+  
+    "4": {
+    "food": "cliff bar",
+    "category": "Snack",
+    "calories": "200",
+    "weight": "40",
+    "price": "$2.50"
+  },
+  
+    "5": {
+    "food": "ramen",
+    "category": "Lunch",
+    "calories": "500",
+    "weight": "100",
+    "price": "$2.50"
+  },
+  
+    "6": {
+    "food": "Lasagna",
+    "category": "Dinner",
+    "calories": "500",
+    "weight": "100",
+    "price": "$7.50"
+  }
+  }
+}  
