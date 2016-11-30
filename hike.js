@@ -1,5 +1,12 @@
-//javascript goes here
-
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyBr6iKw0flJw28mStxf_clP2_ZBIQTORso",
+    authDomain: "food4adventure.firebaseapp.com",
+    databaseURL: "https://food4adventure.firebaseio.com",
+    storageBucket: "food4adventure.appspot.com",
+    messagingSenderId: "1047852701386"
+  };
+  firebase.initializeApp(config);
 
 // Navigation Bar
 function myFunction() {
@@ -10,7 +17,6 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
 
 // User selects hike or adventure from a set of radial? buttons - calories are displayed
 function comox() {
@@ -28,10 +34,25 @@ function westcoast() {
 function juandefuca() {
     alert("You need 5000 calories for this hike!");
 }
-//return list of foods or meal options suitable for that adventure
 
 
-// return feedback, social media info about that meal, food item
+ 
+
+// var bigOne = document.getElementById('bigOne');
+//  var dbRef = firebase.database().ref().child('text');
+//    dbRef.on('value', snap => bigOne.innerText = snap.val());
 
 
-// User Story  - have a slider image that shows different users experiences or stories?
+ // Get Elements
+const preObject = document.getElementById('object');
+ //create reference
+const dbRefObject = firebase.database().ref().child('object');
+
+//sync object changes
+  dbRefObject.on('value', snap => {
+    preObject.innerText = JSON.stringify(snap.val(), null, 3);
+}); 
+
+
+
+
