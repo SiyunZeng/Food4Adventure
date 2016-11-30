@@ -231,3 +231,24 @@ input {
     position: relative;
     z-index: 9999;
 }
+
+
+#feedback {
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+}
+
+#bordertop {
+    border-top: 3px solid #ccc;
+}
+
+#introtext {
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;
+}
+
+#centeredtext {
+  text-align: center;
+}
