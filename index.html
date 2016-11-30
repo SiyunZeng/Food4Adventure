@@ -4,11 +4,13 @@
     <link rel="stylesheet" href="main.css">
      <!-- Latest compiled and minified CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <link src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    
  <!-- Latest compiled and minified JavaScript -->
  <script src="https:maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js:6:37"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
  <script src="hike.js"></script> 
     <title>Food4Adventure</title>
@@ -32,13 +34,12 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="#shop">Shop</a></li>
-            <!--Social media icons -->
           <div class="fb-like" data-href="https://siyunzeng.github.io/Food4Adventure/#home" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true" text-align="right"></div>
           <li class="icon">
             <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
           </li>
-            <li><a href="https://twitter.com/Food4Adventure" class="twitter-follow-button" data-show-count="false">Follow @Food4Adventure</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></li>
         </ul>
+      
 
        <!-- Header Image  Source: http://www.bootply.com/108614#  --> 
       <div class="wide">
@@ -49,9 +50,17 @@
         <div class="col-xs-12 logo"><h2>Pack Smart</h2></div>
       </div>
 
+       <div class="row">
+
+          <div class="col-lg-12">
+                <p id="introtext">Take the guess work out of adventuring! We make sure you have the food you need for your adventure!</p>
+          </div>
+    </div>
+
+
       <div class="row">
           <div class="col-lg-4">
-              <h2 class="center-block">Select a Hike</h2>
+              <h2 id="centeredtext">Select a Hike</h2>
               <div class="btn-group-vertical center-block" role="group" aria-label="...">
                  <button onclick="comox()" class="btn btn-success btn-lg">Comox Glacier</button>
                  <button onclick="albert()" class="btn btn-success btn-lg">Mount Albert Edward</button>
@@ -63,50 +72,49 @@
               </div>
           </div>
           <div class="col-lg-4">
-              <h2>Select Your Foods</h2>
+              <h2 id="centeredtext">Select Your Foods</h2>
               <div class ="meal">
                 <h4 class="text-secondary">Breakfast</h4>
                 <h1 id="bigOne"></h1>
                 <form action="">
-                 <input type="radio" name="breakfast" value="breakfast" id="bigOne">Porridge<br>
+                 <input type="radio" name="foodBreakfast" value="breakfast" id="food1" id="bigOne">Porridge<br>
                 </form>
               </div>
             <div class ="meal">
                     <h4>Snacks</h4>
                     <form action="">
-                      <input type="radio" name="snack" value="snack">Dried Apples<br>
-                      <input type="radio" name="snack" value="snack">Banana Chips<br>
-                      <input type="radio" name="snack" value="snack">Clif Bar<br>
+                      <input type="radio" name="foodSnack1" id="food2" value="snack">Dried Apples<br>
+                      <input type="radio" name="foodSnack1" id="food3" value="snack">Banana Chips<br>
+                      <input type="radio" name="foodSnack1" id="food4" value="snack">Clif Bar<br>
                     </form>
             </div>
             <div class ="meal">
                   <h4>Lunch</h4>
                   <form action="">
-                    <input type="radio" name="snack" value="snack">Dried Apples<br>
-                    <input type="radio" name="lunch" value="lunch">Ramen<br>
+                    <input type="radio" name="foodLunch" id="food5" value="lunch">Ramen<br>
                   </form>
               </div>
             <div class = 'meal'>
                   <h4>Snacks</h4>
                   <form action="">
-                    <input type="radio" name="snack" value="snack">Dried Apples<br>
-                    <input type="radio" name="snack" value="snack">Banana Chips<br>
-                    <input type="radio" name="snack" value="snack">Clif Bar<br>
+                    <input type="radio" name="foodSnack1" id="food6" value="snack">Dried Apples<br>
+                    <input type="radio" name="foodSnack1" id="food7" value="snack">Banana Chips<br>
+                    <input type="radio" name="foodSnack1" id="food8" value="snack">Clif Bar<br>
                   </form>
             </div>
             <div class = 'meal'>
                   <h4>Dinner</h4>
                   <form action="">
-                    <input type="radio" name="dinner" value="dinner">Beef Stoganoff<br>
-                    <input type="radio" name="dinner" value="dinner">Lasagna<br>
+                    <input type="radio" name="foodDinner" id="food9" value="dinner">Beef Stoganoff<br>
+                    <input type="radio" name="foodDinner" id="food10" value="dinner">Lasagna<br>
                   </form>
             </div>
             <br>   
         </div>
         
 
-       <div class="col-lg-4">
-              <h2 class="text-secondary">See Your Progress</h2>
+      <div class="col-lg-4">
+              <h2 class="text-secondary" id="centeredtext">See Your Progress</h2>
               <div class="container col-lg-12">
                   <p>When you fill the bar, you have enough food for your adventure!</p> 
 
@@ -119,25 +127,22 @@
                 </div>
                 <h4>Pro Tips</h4>
                   <p>Make sure your selecting enough protein!</p> 
-                  <p>Dried Fruit and Trail Mix makes a great quick snack. The fat is good for energy!</p>
-                  <p>Don't forget to stay hydrated!</p>
-      </div>   
+                  <p>Dried Fruit and Trail Mix makes a great quick snack</p>
+      </div>
+</div>   
+</div> 
 
+  <div class="row" id="bordertop">
 
-
-</div>
-
-  <div class="row">
-          <div class="col-lg-12 col-centered">
-              <h2 class="text-secondary">Social Media</h2>
-              <h3>What's everyone saying?</h3>
-                <p>"I didn't know how to pack light food for my first hiking trip, but Food4Adventure was extremely helpful and informative!" -Diana</p>
-                <img src="https://s-media-cache-ak0.pinimg.com/236x/24/df/1c/24df1cbab94ae9ec134aab69c0093160.jpg" class="center-block" alt="Hiking" height="370">
-                <p>"The food is compact and so much more delicious than many other brands of outdoor food! Highly recommended!" -Bob</p>
-                <img src="http://65.media.tumblr.com/e33443dd145ef74c2f2cf1d17b1e9a77/tumblr_nmamapflLC1u8webqo1_1280.jpg" class="center-block" alt="Hiking" width="370"> 
+          <div class="col-lg-12">
+              <h2 class="text-secondary" id="centeredtext">What's everyone saying?</h2>
+                <p id="feedback">"I didn't know how to pack light food for my first hiking trip, but Food4Adventure was extremely helpful and informative!" -Diana</p>
+                <img src="https://s-media-cache-ak0.pinimg.com/236x/24/df/1c/24df1cbab94ae9ec134aab69c0093160.jpg" class="center-block" alt="Hiking" height="300">
+                <p id="feedback">"The food is compact and so much more delicious than many other brands of outdoor food! Highly recommended!" -Bob</p>
+                <img src="http://65.media.tumblr.com/e33443dd145ef74c2f2cf1d17b1e9a77/tumblr_nmamapflLC1u8webqo1_1280.jpg" class="center-block" alt="Hiking" width="300"> 
           </div>
     </div>
-</div> 
- 
 </body>
 </html>
+
+
